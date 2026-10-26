@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service • Neo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0f0f13;
+            --card: #1a1a22;
+            --border: #2a2a35;
+            --text: #e4e4e7;
+            --muted: #a1a1aa;
+            --accent: #5865F2;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            line-height: 1.7;
+        }
+        header {
+            border-bottom: 1px solid var(--border);
+            padding: 1.25rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: rgba(15, 15, 19, 0.9);
+            backdrop-filter: blur(12px);
+            position: sticky;
+            top: 0;
+            z-index: 50;
+        }
+        .logo {
+            font-weight: 700;
+            font-size: 1.35rem;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            color: white;
+            text-decoration: none;
+        }
+        .logo span {
+            background: linear-gradient(135deg, #5865F2, #7289da);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        nav a {
+            color: var(--muted);
+            text-decoration: none;
+            margin-left: 1.75rem;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+        nav a:hover, nav a.active { color: white; }
+        main {
+            max-width: 780px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem 5rem;
+        }
+        .page-header {
+            margin-bottom: 2.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid var(--border);
+        }
+        .page-header h1 {
+            font-size: 2.25rem;
+            font-weight: 700;
+            letter-spacing: -0.03em;
+            margin-bottom: 0.5rem;
+        }
+        .page-header .meta {
+            color: var(--muted);
+            font-size: 0.95rem;
+        }
+        h2 {
+            font-size: 1.35rem;
+            font-weight: 600;
+            margin: 2.25rem 0 0.85rem;
+            color: white;
+        }
+        p, li {
+            color: var(--muted);
+            margin-bottom: 0.85rem;
+        }
+        ul, ol {
+            padding-left: 1.4rem;
+            margin-bottom: 1.25rem;
+        }
+        li { margin-bottom: 0.4rem; }
+        strong { color: var(--text); font-weight: 600; }
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .highlight {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.25rem 1.5rem;
+            margin: 1.5rem 0;
+        }
+        footer {
+            border-top: 1px solid var(--border);
+            padding: 2rem;
+            text-align: center;
+            color: var(--muted);
+            font-size: 0.875rem;
+        }
+        @media (max-width: 600px) {
+            .page-header h1 { font-size: 1.75rem; }
+            header { padding: 1rem 1.25rem; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="24" height="24" rx="6" fill="#5865F2"/>
+                <path d="M7 8.5L12 15.5L17 8.5" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>Neo</span>
+        </a>
+        <nav>
+            <a href="terms.html" class="active">Terms of Service</a>
+            <a href="privacy.html">Privacy Policy</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="page-header">
+            <h1>Terms of Service</h1>
+            <p class="meta">Last updated: October 26, 2025</p>
+        </div>
+
+        <div class="highlight">
+            <p style="margin:0"><strong>By inviting Neo to a server or using any of its features, you agree to these Terms of Service and our <a href="privacy.html">Privacy Policy</a>.</strong> If you do not agree, do not use the bot.</p>
+        </div>
+
+        <h2>1. Acceptance of Terms</h2>
+        <p>These Terms of Service ("Terms") govern your access to and use of the Discord bot Neo ("the Bot", "we", "us", or "our"). By inviting the Bot to a Discord server or using its commands and features, you acknowledge that you have read, understood, and agree to be bound by these Terms.</p>
+
+        <h2>2. Description of Service</h2>
+        <p>Neo is a Discord bot that provides various features and commands within Discord servers. The exact functionality may change over time as we add, modify, or remove features.</p>
+
+        <h2>3. Eligibility & Age Requirements</h2>
+        <p>You must comply with Discord's Terms of Service and be at least the minimum age required by Discord in your country to use the Bot. Features marked as NSFW (if any) may only be used by users who meet the age of majority in their jurisdiction.</p>
+
+        <h2>4. Acceptable Use</h2>
+        <p>You agree <strong>not</strong> to:</p>
+        <ul>
+            <li>Use the Bot for any illegal purpose or in violation of any applicable laws</li>
+            <li>Abuse, spam, flood, or attempt to overload the Bot or its infrastructure</li>
+            <li>Attempt to reverse-engineer, exploit, or gain unauthorized access to the Bot</li>
+            <li>Use the Bot to harass, threaten, or harm other users</li>
+            <li>Circumvent any rate limits, restrictions, or security measures</li>
+            <li>Use the Bot in a way that violates Discord's Terms of Service or Community Guidelines</li>
+        </ul>
+        <p>We reserve the right to restrict or permanently ban access to the Bot (including specific servers or users) for violations of these Terms, without prior notice.</p>
+
+        <h2>5. User Content & Responsibility</h2>
+        <p>You are solely responsible for any content, commands, or data you submit through the Bot. You must have the necessary rights and permissions for any content you process with the Bot.</p>
+
+        <h2>6. Availability & Changes</h2>
+        <p>We strive to keep Neo available, but we do not guarantee uninterrupted, error-free, or continuous service. The Bot may be temporarily unavailable due to maintenance, updates, or unforeseen issues. We may modify, suspend, or discontinue any feature of the Bot at any time without liability.</p>
+
+        <h2>7. Disclaimer of Warranties</h2>
+        <p>THE BOT IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, WHETHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. WE DO NOT WARRANT THAT THE BOT WILL MEET YOUR REQUIREMENTS OR BE FREE FROM ERRORS.</p>
+
+        <h2>8. Limitation of Liability</h2>
+        <p>TO THE MAXIMUM EXTENT PERMITTED BY LAW, WE SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR ANY LOSS OF PROFITS, DATA, OR GOODWILL ARISING OUT OF YOUR USE OF (OR INABILITY TO USE) THE BOT.</p>
+
+        <h2>9. Indemnification</h2>
+        <p>You agree to indemnify and hold us harmless from any claims, damages, losses, or expenses (including reasonable attorneys' fees) arising from your use of the Bot or violation of these Terms.</p>
+
+        <h2>10. Affiliation</h2>
+        <p>Neo is <strong>not</strong> affiliated with, endorsed by, or sponsored by Discord Inc. All Discord-related trademarks and assets belong to their respective owners.</p>
+
+        <h2>11. Changes to These Terms</h2>
+        <p>We may update these Terms from time to time. The "Last updated" date at the top will reflect the most recent revision. Continued use of the Bot after changes constitutes acceptance of the new Terms. We recommend checking this page periodically.</p>
+
+        <h2>12. Termination</h2>
+        <p>You may stop using the Bot at any time by removing it from your servers. We may terminate or suspend access to the Bot for any reason, including violation of these Terms.</p>
+
+        <h2>13. Contact</h2>
+        <p>If you have questions about these Terms, please contact us through the support channels provided with the Bot (e.g. support server or developer contact).</p>
+
+        <h2>14. Governing Law</h2>
+        <p>These Terms shall be governed by and construed in accordance with applicable laws, without regard to conflict of law principles.</p>
+    </main>
+
+    <footer>
+        <p>© 2025 Neo Bot. Not affiliated with Discord Inc. · <a href="privacy.html">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>

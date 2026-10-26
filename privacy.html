@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy • Neo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0f0f13;
+            --card: #1a1a22;
+            --border: #2a2a35;
+            --text: #e4e4e7;
+            --muted: #a1a1aa;
+            --accent: #5865F2;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            line-height: 1.7;
+        }
+        header {
+            border-bottom: 1px solid var(--border);
+            padding: 1.25rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: rgba(15, 15, 19, 0.9);
+            backdrop-filter: blur(12px);
+            position: sticky;
+            top: 0;
+            z-index: 50;
+        }
+        .logo {
+            font-weight: 700;
+            font-size: 1.35rem;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            color: white;
+            text-decoration: none;
+        }
+        .logo span {
+            background: linear-gradient(135deg, #5865F2, #7289da);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        nav a {
+            color: var(--muted);
+            text-decoration: none;
+            margin-left: 1.75rem;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+        nav a:hover, nav a.active { color: white; }
+        main {
+            max-width: 780px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem 5rem;
+        }
+        .page-header {
+            margin-bottom: 2.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid var(--border);
+        }
+        .page-header h1 {
+            font-size: 2.25rem;
+            font-weight: 700;
+            letter-spacing: -0.03em;
+            margin-bottom: 0.5rem;
+        }
+        .page-header .meta {
+            color: var(--muted);
+            font-size: 0.95rem;
+        }
+        h2 {
+            font-size: 1.35rem;
+            font-weight: 600;
+            margin: 2.25rem 0 0.85rem;
+            color: white;
+        }
+        p, li {
+            color: var(--muted);
+            margin-bottom: 0.85rem;
+        }
+        ul, ol {
+            padding-left: 1.4rem;
+            margin-bottom: 1.25rem;
+        }
+        li { margin-bottom: 0.4rem; }
+        strong { color: var(--text); font-weight: 600; }
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .highlight {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.25rem 1.5rem;
+            margin: 1.5rem 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.25rem 0;
+            font-size: 0.95rem;
+        }
+        th, td {
+            text-align: left;
+            padding: 0.85rem 1rem;
+            border: 1px solid var(--border);
+        }
+        th {
+            background: var(--card);
+            color: white;
+            font-weight: 600;
+        }
+        td { color: var(--muted); }
+        footer {
+            border-top: 1px solid var(--border);
+            padding: 2rem;
+            text-align: center;
+            color: var(--muted);
+            font-size: 0.875rem;
+        }
+        @media (max-width: 600px) {
+            .page-header h1 { font-size: 1.75rem; }
+            header { padding: 1rem 1.25rem; }
+            table { font-size: 0.85rem; }
+            th, td { padding: 0.65rem 0.75rem; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="24" height="24" rx="6" fill="#5865F2"/>
+                <path d="M7 8.5L12 15.5L17 8.5" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>Neo</span>
+        </a>
+        <nav>
+            <a href="terms.html">Terms of Service</a>
+            <a href="privacy.html" class="active">Privacy Policy</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="page-header">
+            <h1>Privacy Policy</h1>
+            <p class="meta">Last updated: October 26, 2025</p>
+        </div>
+
+        <div class="highlight">
+            <p style="margin:0">This Privacy Policy explains how <strong>Neo</strong> collects, uses, stores, and protects information when you use the bot on Discord. By using Neo, you agree to the practices described here.</p>
+        </div>
+
+        <h2>1. Introduction</h2>
+        <p>Neo is a Discord bot. This policy describes our data practices in connection with the Bot. We are committed to protecting user privacy and complying with applicable laws, including Discord's Developer Terms of Service and relevant privacy regulations (such as GDPR where applicable).</p>
+
+        <h2>2. Information We Collect</h2>
+        <p>Depending on the features used and permissions granted, Neo may collect and process the following categories of data:</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Data Type</th>
+                    <th>Examples</th>
+                    <th>Purpose</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Discord Identifiers</strong></td>
+                    <td>User IDs, Guild (Server) IDs, Channel IDs, Role IDs</td>
+                    <td>Core functionality, permissions, settings</td>
+                </tr>
+                <tr>
+                    <td><strong>User Information</strong></td>
+                    <td>Usernames, display names, nicknames, avatars (as provided by Discord)</td>
+                    <td>Display, logging, personalization</td>
+                </tr>
+                <tr>
+                    <td><strong>Server Information</strong></td>
+                    <td>Server name, member count, icon, configuration</td>
+                    <td>Server-specific settings and features</td>
+                </tr>
+                <tr>
+                    <td><strong>Command & Usage Data</strong></td>
+                    <td>Commands used, timestamps, feature interactions</td>
+                    <td>Provide features, improve the bot, prevent abuse</td>
+                </tr>
+                <tr>
+                    <td><strong>Message Content</strong></td>
+                    <td>Only when required by a specific feature (e.g. moderation, tickets)</td>
+                    <td>Feature functionality (if Message Content Intent is enabled)</td>
+                </tr>
+                <tr>
+                    <td><strong>Configuration Data</strong></td>
+                    <td>Custom prefixes, settings, preferences set by administrators</td>
+                    <td>Remember server/user preferences</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>We do <strong>not</strong> intentionally collect sensitive personal data such as real names, email addresses, phone numbers, payment information, or government IDs unless you explicitly provide them through a feature that requires it.</p>
+
+        <h2>3. How We Use the Data</h2>
+        <p>We use the collected data solely to:</p>
+        <ul>
+            <li>Operate and provide the Bot's features and commands</li>
+            <li>Store and apply server-specific and user-specific settings</li>
+            <li>Prevent abuse, spam, and unauthorized use</li>
+            <li>Improve performance, reliability, and user experience</li>
+            <li>Comply with legal obligations and Discord's policies</li>
+        </ul>
+        <p>We do <strong>not</strong> sell, rent, or trade personal data to third parties for marketing purposes.</p>
+
+        <h2>4. Data Storage & Retention</h2>
+        <p>Data is stored on secure servers/databases under our control or that of trusted hosting providers. We retain data only as long as necessary to provide the service or as required by law.</p>
+        <ul>
+            <li><strong>Server settings & configurations</strong> — retained while the bot remains in the server or until deleted by an administrator / data deletion request</li>
+            <li><strong>Command logs / temporary data</strong> — typically short-lived and automatically cleaned</li>
+            <li><strong>User-related data</strong> — deleted upon request or when no longer needed for the service</li>
+        </ul>
+
+        <h2>5. Data Sharing</h2>
+        <p>We may share data only in the following limited circumstances:</p>
+        <ul>
+            <li>With service providers who help us host or operate the Bot (bound by confidentiality obligations)</li>
+            <li>When required by law, legal process, or to protect our rights and safety</li>
+            <li>With your explicit direction (e.g. integrations you enable)</li>
+        </ul>
+        <p>We do not share data with advertisers or data brokers.</p>
+
+        <h2>6. Data Security</h2>
+        <p>We implement reasonable technical and organizational measures to protect data against unauthorized access, loss, or alteration. However, no method of transmission or storage is 100% secure, and we cannot guarantee absolute security.</p>
+
+        <h2>7. Your Rights & Data Deletion</h2>
+        <p>Depending on your location, you may have rights under privacy laws (e.g. GDPR, CCPA), including the right to:</p>
+        <ul>
+            <li>Access the personal data we hold about you</li>
+            <li>Request correction or deletion of your data</li>
+            <li>Object to or restrict certain processing</li>
+            <li>Data portability (where applicable)</li>
+        </ul>
+        <p><strong>To request deletion of your data</strong> or exercise other rights, contact us through the official support channels for Neo (support server or developer contact). For security, we may require verification that you own the relevant Discord account or server.</p>
+        <p>Server administrators can also remove the Bot from their server, which will typically stop further data collection for that server. Residual data may be deleted upon request.</p>
+
+        <h2>8. Children's Privacy</h2>
+        <p>The Bot is not directed at children under the age required by Discord's Terms of Service. We do not knowingly collect personal information from children in violation of applicable laws. If you believe we have collected such data, please contact us so we can delete it.</p>
+
+        <h2>9. Third-Party Services</h2>
+        <p>The Bot runs on Discord's platform. Your use of Discord is also governed by <a href="https://discord.com/terms" target="_blank" rel="noopener">Discord's Terms of Service</a> and <a href="https://discord.com/privacy" target="_blank" rel="noopener">Privacy Policy</a>. We are not responsible for Discord's data practices.</p>
+
+        <h2>10. International Transfers</h2>
+        <p>If you are located outside the country where our servers are located, your data may be transferred and processed in other jurisdictions. We take steps to ensure appropriate safeguards are in place where required.</p>
+
+        <h2>11. Changes to This Policy</h2>
+        <p>We may update this Privacy Policy from time to time. The "Last updated" date will indicate the latest revision. Continued use of the Bot after changes constitutes acceptance of the updated policy. We encourage you to review this page periodically.</p>
+
+        <h2>12. Contact Us</h2>
+        <p>For questions about this Privacy Policy, data requests, or privacy concerns, please contact us via the support channels provided with Neo (support Discord server or the contact method listed in the bot's description / developer portal).</p>
+    </main>
+
+    <footer>
+        <p>© 2025 Neo Bot. Not affiliated with Discord Inc. · <a href="terms.html">Terms of Service</a></p>
+    </footer>
+</body>
+</html>
